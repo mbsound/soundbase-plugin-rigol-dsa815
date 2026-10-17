@@ -1,0 +1,82 @@
+{
+  "manifestVersion": 1,
+  "id": "rigol-dsa815",
+  "name": "Rigol DSA815",
+  "version": "0.1.0",
+  "license": "MIT",
+  "platforms": [
+    "darwin-arm64"
+  ],
+  "maintainers": [
+    {
+      "name": "Matt Bell",
+      "email": "matt@mbsound.org"
+    }
+  ],
+  "repository": "https://github.com/mbsound/soundbase-plugin-rigol-dsa815",
+  "contract": {
+    "core": "1.4",
+    "modules": {
+      "SpectrumAnalyzer": "1.2"
+    }
+  },
+  "runtime": {
+    "type": "node",
+    "entrypoint": "main.js"
+  },
+  "deployment": [
+    "managed"
+  ],
+  "template": {
+    "name": "soundbase-plugin-template",
+    "version": "1.0.15"
+  },
+  "products": [
+    {
+      "deviceTypeId": "plugin:rigol-dsa815/dsa815",
+      "manufacturer": {
+        "id": "rigol",
+        "name": "Rigol"
+      },
+      "model": {
+        "id": "dsa815",
+        "name": "DSA815",
+        "displayName": "Rigol DSA815 (LAN)"
+      },
+      "family": {
+        "id": "rigol-dsa800",
+        "name": "DSA800"
+      },
+      "capabilities": {
+        "spectrumAnalyzer": true
+      },
+      "traits": {
+        "isSpectrumAnalyzer": true
+      }
+    }
+  ],
+  "pluginConfigFields": [
+    {
+      "id": "addresses",
+      "type": "textinput",
+      "label": "Analyzer addresses",
+      "help": "IP addresses or hostnames of DSA815 units on the show network, separated by commas. Each one is probed while SoundBase is looking for devices. You can also add a unit by address from the device picker instead."
+    }
+  ],
+  "deviceConfigFields": [
+    {
+      "id": "host",
+      "type": "textinput",
+      "label": "IP address",
+      "required": true,
+      "help": "The analyzer's address on the network. Find it on the analyzer under System > I/O Setting > LAN."
+    },
+    {
+      "id": "port",
+      "type": "number",
+      "label": "VXI-11 port",
+      "help": "Leave empty. The analyzer tells us its port through the standard RPC port mapper; set this only if that is blocked by a firewall."
+    }
+  ],
+  "stateKeys": []
+}

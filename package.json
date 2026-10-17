@@ -1,0 +1,36 @@
+{
+  "name": "soundbase-plugin-rigol-dsa815",
+  "version": "0.1.0",
+  "description": "SoundBase plugin for the Rigol DSA815 / DSA815-TG spectrum analyzer over VXI-11 (LAN).",
+  "license": "BUSL-1.1",
+  "type": "module",
+  "main": "main.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "test": "node --test __tests__/*.test.js",
+    "doctor": "node scripts/doctor.mjs",
+    "manifest": "node scripts/validate-manifest.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "rename": "node scripts/rename.mjs",
+    "bump": "node scripts/bump-version.mjs",
+    "pack:release": "node scripts/pack-release.mjs"
+  },
+  "dependencies": {
+    "@soundbase/plugin-contract": "^0.12.2",
+    "@soundbase/plugin-shell": "^0.12.2"
+  },
+  "soundbase": {
+    "template": {
+      "name": "soundbase-plugin-template",
+      "version": "1.0.15"
+    },
+    "generatedFrom": "7f3cd7f23533d5c769f70e8d17eb91dcc4a43a07"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbsound/soundbase-plugin-rigol-dsa815.git"
+  }
+}
