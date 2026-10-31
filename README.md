@@ -138,9 +138,10 @@ the loopback interface. It reads and writes no files and talks to nothing else.
 
 ## Status
 
-Tested on macOS (Apple silicon), so `platforms` lists only `darwin-arm64`.
-The code has nothing platform-specific in it; add `darwin-x64` and
-`win32-x64` once it has been run there.
+Tested against an instrument on macOS (Apple silicon). `platforms` also
+lists `darwin-x64` and `win32-x64`: the code has nothing platform-specific in
+it, and on Windows x64 the test suite and the boot smoke check pass, but no
+instrument has been driven from either yet.
 
 ## Licence
 

@@ -5,7 +5,9 @@
   "version": "0.1.0",
   "license": "MIT",
   "platforms": [
-    "darwin-arm64"
+    "darwin-arm64",
+    "darwin-x64",
+    "win32-x64"
   ],
   "maintainers": [
     {
