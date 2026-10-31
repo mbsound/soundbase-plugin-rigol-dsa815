@@ -1,6 +1,6 @@
 {
   "name": "soundbase-plugin-rigol-dsa815",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SoundBase plugin for the Rigol DSA815 / DSA815-TG spectrum analyzer over VXI-11 (LAN).",
   "license": "BUSL-1.1",
   "type": "module",

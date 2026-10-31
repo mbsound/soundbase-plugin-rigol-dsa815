@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "rigol-dsa815",
   "name": "Rigol DSA815",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "platforms": [
     "darwin-arm64",
